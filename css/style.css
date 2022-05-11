@@ -61,7 +61,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.container-portfolio1{
+.container-portfolio{
   outline:1px solid red;
   width: 1200px;
 
@@ -77,13 +77,13 @@
   color: var(--main-text-color);
   background-color: var(--primery-white-color);
   font-family: "Roboto", sans-serif;
+  border: 1px solid #ECECEC;
 }
 
 .header-container{
   display: flex;
   align-items:center;
   margin: auto;
-  border: 1px solid #ECECEC;
 }
 
 
@@ -159,6 +159,7 @@
   margin-left: auto;
   margin-bottom: 0;
   align-items: center;
+  padding: 0;
 }
 .contacts :hover,
 .contacts :focus{
@@ -336,7 +337,10 @@ a {
   margin: 0;
   padding-right: 30px;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+}
+.list-special{
+  margin-right: 30px;
 }
 .link-special:last-child{
   padding-right: 0px;
@@ -364,6 +368,9 @@ a {
 }
 .link-special{
   padding: 0;
+}
+.list-work{
+  margin-right: 30px;
 }
 .link-special>.list-work{
   flex-basis: 370px;
@@ -458,16 +465,18 @@ margin-bottom: 10px;
 }
 
 .cards{
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: -30px;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
 .link-cards{
   width: 370;
+  margin-top: 30px;
   margin-left: 0;
   margin-right: 30px;
-  margin-bottom: 30px;
+  
   box-sizing: border-box;
   background: var(--primery-white-color);
   border: 1px solid #EEEEEE;
